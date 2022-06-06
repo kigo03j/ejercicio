@@ -10,16 +10,19 @@ using System.Windows.Forms;
 
 namespace ejercicio
 {
-    public partial class Form1 : Form
+    public partial class Suma : Form
     {
-        public Form1()
+        public Suma()
         {
             InitializeComponent();
         }
 
-        private void Form1_Load(object sender, EventArgs e)
+        private void BtnSuma_Click(object sender, EventArgs e)
         {
-
+            int num1 = Convert.ToInt32(Txt1.Text);
+            int num2 = Convert.ToInt32(Txt2.Text);
+            int resultado = num1 + num1;
+            TxtResult.Text= resultado.ToString();   
         }
     }
 }
